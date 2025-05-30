@@ -10,7 +10,7 @@
 
 ## Deskripsi Program
 
-Program ini digunakan untuk menghitung **kedalaman air $h$ dalam sebuah tangki berbentuk bola** dengan radius $R$ tertentu, sehingga volume air yang ada dalam tangki mencapai volume target $V$.
+Program yang telah kami buat digunakan untuk menghitung **kedalaman air $h$ dalam sebuah tangki berbentuk bola** dengan radius $R$ tertentu, sehingga volume air yang ada dalam tangki mencapai volume target $V$.
 
 Persamaan volume air dalam tangki bola diberikan oleh rumus:
 
@@ -26,13 +26,11 @@ $$
 
 Program menerima input nilai radius $R$, volume air $V$, dan tebakan awal kedalaman $h_0$ (pada kode ini sudah diset default). Kemudian program melakukan iterasi Newton-Raphson sampai solusi $h$ yang memenuhi $f(h) \approx 0$ ditemukan dengan toleransi error tertentu.
 
----
 
 ## Penjelasan Program
 
 Fungsi *f(h)* digunakan untuk menghitung selisih antara volume air aktual berdasarkan kedalaman $h$ dengan volume target $V$. Sedangkan fungsi *df(h)* berfungsi untuk menghitung turunan dari fungsi *f(h)* yang diperlukan dalam metode Newton-Raphson guna mempercepat pencarian akar fungsi tersebut. Fungsi *newton\_raphson()* kemudian melakukan iterasi berdasarkan metode Newton-Raphson untuk mencari nilai kedalaman $h$ yang memenuhi persamaan hingga mencapai tingkat konvergensi tertentu atau batas maksimum iterasi yang ditentukan. Program utama (*main*) bertugas mengatur parameter-parameter yang diperlukan, menjalankan metode Newton-Raphson, serta menampilkan hasil berupa kedalaman air yang ditemukan beserta volume air yang dihitung pada kedalaman tersebut. Selain itu, program juga menampilkan detail setiap iterasi, termasuk nilai $h$ dan nilai fungsi $f(h)$, sehingga proses konvergensi dapat dipantau secara langsung.
 
----
 
 ## Contoh Output Program
 
